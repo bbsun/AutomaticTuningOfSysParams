@@ -1,0 +1,43 @@
+<SystemParametersTuner>
+
+    <RegistrationSystem id="system" sysparams="1 0.05 10" GroundTruth="1 0.01 50">
+        <ExampleRegistrater1 id="registrater">
+            <Similarity3DTransform id="transform" fparams="" params=""/>
+            <LinearInterpolateImageFunction id="interpolator"/>
+            <MattesMutualInformationImageToImageMetric id="metric" NumberOfHistogramBins="64" NumberOfSpatialSamples="50000" SamplingSeed="76926294"/>
+            <RegularStepGradientDescentOptimizer id="optimizer" MaximumStepLength="0.40000" MinimumStepLength="0.00001" MaximumNumberOfIterations="250" RelaxationFactor="0.7" GradientMagnitudeTolerance="0.00001"/>
+        </ExampleRegistrater1>
+    </RegistrationSystem>
+
+    <DataSet id="data">
+        <RegistrationSystemData home="data/4D CT Liver/" tparams="" seglabel="1">
+            <image id="fdata" path="Patient 0/T_0/" ct="ct.mhd" seg="liver_segmentation/T_0.mhd"/>
+            <image id="mdata" path="Patient 1/T_0/" ct="ct.mhd" seg="liver_segmentation/T_0.mhd"/>
+        </RegistrationSystemData>
+        <RegistrationSystemData home="data/4D CT Liver/" tparams="" seglabel="1">
+            <image id="fdata" path="Patient 0/T_0/" ct="ct.mhd" seg="liver_segmentation/T_0.mhd"/>
+            <image id="mdata" path="Patient 2/T_0/" ct="ct.mhd" seg="liver_segmentation/T_0.mhd"/>
+        </RegistrationSystemData>
+        <RegistrationSystemData home="data/4D CT Liver/" tparams="" seglabel="1">
+            <image id="fdata" path="Patient 0/T_0/" ct="ct.mhd" seg="liver_segmentation/T_0.mhd"/>
+            <image id="mdata" path="Patient 3/T_20/" ct="ct.mhd" seg="liver_segmentation/T_20.mhd"/>
+        </RegistrationSystemData>
+        <RegistrationSystemData home="data/4D CT Liver/" tparams="" seglabel="1">
+            <image id="fdata" path="Patient 0/T_0/" ct="ct.mhd" seg="liver_segmentation/T_0.mhd"/>
+            <image id="mdata" path="Patient 4/T_0/" ct="ct.mhd" seg="liver_segmentation/T_0.mhd"/>
+        </RegistrationSystemData>
+    </DataSet>
+
+    <SystemTrainingMetric id="metric"/>
+
+    <ParticleSwarmOptimizer id="optimizer" NumberOfParticles="25" SamplingSeed="12345" InertiaCoefficient="0.7288" GlobalCoefficient="1.496" PersonalCoefficient="1.496" ConvergedPercentageToStop="0.6" MaximumNumberOfIterations="100" FunctionConvergenceTolerance="1e-5">
+        <Array id="lbound" value="0.5 0.001   1.0"/>
+        <Array id="ubound" value="2.0 0.1   100.0"/>
+        <Array id="ParametersConvergenceTolerance" value="1e-5 1e-5 1e-5"/>
+    </ParticleSwarmOptimizer>
+
+    <MPIJobScheduler id="scheduler"/>
+
+    <SimpleSystemParametersTunerMonitor id="monitor"/>
+
+</SystemParametersTuner>

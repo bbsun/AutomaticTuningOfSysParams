@@ -1,0 +1,102 @@
+=====================================================
+A Framework for Automatic Tuning of System Parameters
+=====================================================
+
+1. Introduction
+
+The performance of most software systems and algorithms in medical image
+processing depends upon parameter values. Traditionally, these values are
+determined empirically using domain knowledge and a trial and error process.
+Consequentially, they may not be optimal. We provide a general framework for
+automatic tuning of system parameters which are optimal based on a user
+specified criterion, with examples from medical image processing.
+
+A UML diagram describing the framework design is given in
+frameworkDesign.zargo. This document was created with the open source UML
+modeling tool ArgoUML (http://argouml.tigris.org).
+
+This work was supported by NLM/NIH contract HHSN276201000578P "Framework for
+Automated Parameter Tuning of ITK Registration Pipelines".
+
+2. Prerequisites
+
+To build this toolkit from source, the following libraries must be installed:
+- ITK (http://www.itk.org) version 4.2 or later,
+- MPICH2 (http://www.mcs.anl.gov/research/projects/mpich2/), and
+- CMake (http://www.cmake.org) 2.8 or later.
+
+The software has been tested on both Windows and Linux platforms. The
+following are the environments that were used to develop and test the
+software:
+- Windows: Windows 7 64-bit, Visual Studio 2010, MPICH2 1.4.1p1
+- Linux: CentOS 6.2 64-bit, GCC 4.4.6, MPICH2 1.2.1p1
+
+3. Run the examples
+
+In the "examples" directory, parameters tuning job files (in XML format) for
+two example registration problems were provided to demonstrate the use of the
+framework. Both problems register two 3D images, and use the overlap between
+two corresponding segmentations to evalute the final alignment.
+Example1 (see also source/sziExampleRegistrater1.h) is a similarity registration
+problem with three tunable parameters, and Example2 (see also source/
+sziExampleRegistrater2.h) is a multi-level deformable registration problem with
+four tunable parameters.
+
+The 4D liver data from the A2D2 project are needed to run the examples. The data
+can be downloaded from:
+
+http://midas.kitware.com/community/view/33
+
+After downloading the data, the DICOM images need to be converted to the MHD
+format. The DicomSeriesReadImageWrite2 example program that comes with ITK can
+be used for this purpose (the program was included in this distribution under
+the directory "tools" for your convenience).
+
+Some settings in the XML files can be modified to adapt the examples for the
+user's need. Currently, changes of following important settings are supported
+for Example1:
+- change the "sysparams" attribute in the "RegistrationSystem" tag to provide an
+  initial setting for the parameters to be tuned
+- provide a rotation center (fparams) and initial alignment (params) for the
+  Similarity3DTransform
+- change the interpolation method to NearestNeighbour or Linear
+- change the settings for the Mattes Mutual Information similarity metric
+- change the settings for the RegularStepGradientDescentOptimizer
+- use user testing images in the DataSet section
+- change the settings for the ParticleSwarmOptimizer
+- use other optimizers instead of ParticleSwarmOptimizer, for example,
+  ExhaustiveOptimizer
+
+For Example2, in addition to the above settings, another key modification that
+users can make is:
+- the total size of the control grid over the fixed image in
+  BSplineDeformableTransform (the first three parameters in "fparams")
+
+To start a parameters tuning job, type the following command in the "examples"
+directory:
+
+mpiexec -n <NumberOfProcesses> <bin>/run_mpijob <ExampleSystem>.spt.xml
+
+This will start a number of processes on local computer to collaboratively
+fulfill the parameters tunning job. If there are N pairs of training images in
+the XML job file, then use of N+1 total processes is recommended in order to
+achieve optimal computation performance. Refer to MPICH2 documentation for
+running the examples in a cluster of MPI-connected workstations.
+
+NOTE: When running the examples in a cluster of workstations, it is important
+      that each computer has a local copy of the tuning program (i.e. run_mpijob
+      ), the XML job files, and the testing images that are organized in exactly
+      the same directory structure.
+
+The output of each tuning process is saved into a set of log files prefixed
+with the input XML file and suffixed with "...Worker-<N>.log". For example, the
+master worker has the suffix of "...Worker-0.log".
+
+4. Parameters tuning for user systems
+
+To tune a user system using our framework, the user needs to wrap its system
+using the System interface (see sziSystem.h), and writes the corresponding
+DOM-based readers. See "sziRegistrationSystem.h" and
+"sziRegistrationSystemDOMReader.h" for an example of user system and its
+DOM-based reader. The user will also need to revise "sziSystemDOMReader.h" to
+add reading support for the user system.
