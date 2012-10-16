@@ -2,6 +2,7 @@
 
 #include "sziTestSystemDOMReader.h"
 #include "sziRegistrationSystemDOMReader.h"
+#include "sziLiverSegmentationSystemDOMReader.h"
 #include "sziDataSetDOMReader.h"
 
 #include "sziLogService.h"
@@ -61,6 +62,26 @@ namespace szi
         else if ( tagname == "RegistrationSystemData" )
         {
             typedef RegistrationSystemDataDOMReader ReaderType;
+            typedef ReaderType::OutputType RealOutputType;
+            //
+            OutputType* o = this->GetOutput();
+            RealOutputType* output = dynamic_cast<RealOutputType*>( o );
+            if ( o && output == 0 )
+            {
+            	getSystemLogger() << StartWarning(this->GetNameOfClass()) << "GenerateData(): The user-specified output is invalid and will be ignored!" << End;
+            }
+            //
+            ReaderType::Pointer reader = ReaderType::New();
+            reader->SetOutput( output );
+            reader->Update( inputdom );
+            output = reader->GetOutput();
+            //
+            this->SetOutput( output );
+        }
+        
+        else if ( tagname == "LiverSegmentationSystemData" )
+        {
+            typedef LiverSegmentationSystemDataDOMReader ReaderType;
             typedef ReaderType::OutputType RealOutputType;
             //
             OutputType* o = this->GetOutput();

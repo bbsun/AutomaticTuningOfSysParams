@@ -6,6 +6,7 @@
 
 #include "sziTestSystemDOMReader.h"
 #include "sziRegistrationSystemDOMReader.h"
+#include "sziLiverSegmentationSystemDOMReader.h"
 
 #include "sziLogService.h"
 
@@ -60,6 +61,25 @@ namespace szi
             else if ( tagname == "RegistrationSystem" )
             {
                 typedef RegistrationSystemDOMReader ReaderType;
+                typedef ReaderType::OutputType RealOutputType;
+                //
+                RealOutputType* o = dynamic_cast<RealOutputType*>( output );
+                if ( output && o == 0 )
+                {
+                	getSystemLogger() << StartWarning(this->GetNameOfClass()) << "GenerateData(): The user-specified output is invalid and will be ignored!" << End;
+                }
+                //
+                ReaderType::Pointer reader = ReaderType::New();
+                reader->SetOutput( o );
+                reader->Update( inputdom );
+                output = reader->GetOutput();
+                //
+                this->SetOutput( output );
+            }
+            
+            else if ( tagname == "LiverSegmentationSystem" )
+            {
+                typedef LiverSegmentationSystemDOMReader ReaderType;
                 typedef ReaderType::OutputType RealOutputType;
                 //
                 RealOutputType* o = dynamic_cast<RealOutputType*>( output );

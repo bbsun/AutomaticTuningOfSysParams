@@ -98,5 +98,5 @@ To tune a user system using our framework, the user needs to wrap its system
 using the System interface (see sziSystem.h), and writes the corresponding
 DOM-based readers. See "sziRegistrationSystem.h" and
 "sziRegistrationSystemDOMReader.h" for an example of user system and its
-DOM-based reader. The user will also need to revise "sziSystemDOMReader.h" to
-add reading support for the user system.
+DOM-based reader. The user will also need to revise "sziSystemDOMReader.h" and
+"sziDataDOMReader.cxx" to add reading support for the user system.
