@@ -1,0 +1,2 @@
+guidelines:
+http://spie.org/x30099.xml

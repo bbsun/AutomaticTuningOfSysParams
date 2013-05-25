@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{metaopt}
+Karpenko, A.~P. and Svianadze, Z.~O., ``Meta-optimization based on
+  self-organizing map and genetic algorithm,'' {\em Optical Memory \& Neural
+  Networks}~{\bf 20},  279--283 (Dec. 2011).
+
+\bibitem{smit09:ece}
+Smit, S.~K. and Eiben, A.~E., ``Comparing parameter tuning methods for
+  evolutionary algorithms,'' in [{\em IEEE Congress on Evolutionary
+  Computation}{\nolinebreak\hspace{0.1em}]},   399--406 (May 2009).
+
+\bibitem{SkjellumAn1994b}
+Skjellum, A., Doss, N.~E., Viswanathan, K., Chowdappa, A., and Bangalore,
+  P.~V., ``Extending the message passing interface ({MPI}),'' in [{\em
+  Proceedings of Scalable Parallel Libraries, IEEE Conference
+  {II}}{\nolinebreak\hspace{0.1em}]},  (October 1994).
+
+\bibitem{itk:v2.4}
+Ibanez, L., Schroeder, W., Ng, L., and Cates, J.,  [{\em The {ITK} Software
+  Guide Second Edition (Updated for {ITK} version
+  2.4)}{\nolinebreak\hspace{0.1em}]}, Kitware (2005).
+
+\bibitem{dsc}
+Dice, L.~R., ``Measures of the amount of ecologic association between
+  species,'' {\em Ecology}~{\bf 26},  297--302 (July 1945).
+
+\bibitem{Kennedy95:NN}
+Kennedy, J. and Eberhart, R., ``Particle swarm optimization,'' in [{\em IEEE
+  Conference on Neural Networks}{\nolinebreak\hspace{0.1em}]},   {\bf 4},
+  1942--1948 (Nov. 1995).
+
+\bibitem{Hansen06}
+Hansen, N., ``The {CMA} evolution strategy: A comparing review,'' in [{\em
+  Advances on estimation of distribution
+  algorithms}{\nolinebreak\hspace{0.1em}]},   75--102, Springer (2006).
+
+\bibitem{Mattes01:SPIE}
+Mattes, D., Haynor, D.~R., Vesselle, H., Lewellen, T.~K., and Eubank, W.,
+  ``Nonrigid multimodality image registration,'' in [{\em Proceedings of
+  SPIE}{\nolinebreak\hspace{0.1em}]},   {\bf 4322},  1609–--1620 (2001).
+
+\end{thebibliography}

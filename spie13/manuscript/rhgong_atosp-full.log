@@ -1,0 +1,192 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.2.21)  16 JAN 2013 11:47
+entering extended mode
+**rhgong_atosp-full.tex
+(X:\projects\AutomaticTuningOfSysParams\spie\manuscript\rhgong_atosp-full.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+(X:\projects\AutomaticTuningOfSysParams\spie\manuscript\spie.cls
+Document Class: spie 2008/01/19 v3.3 SPIE Proceedings class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+ten-point font
+(X:\projects\AutomaticTuningOfSysParams\spie\manuscript\ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(X:\projects\AutomaticTuningOfSysParams\spie\manuscript\cite.sty
+LaTeX Info: Redefining \cite on input line 285.
+LaTeX Info: Redefining \nocite on input line 356.
+Package: cite 2009/08/29  v 5.2
+LaTeX Info: Redefining \cite on input line 437.
+)
+\c@theorem=\count87
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks16
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\TX@col@width=\dimen107
+\TX@old@table=\dimen108
+\TX@old@col=\dimen109
+\TX@target=\dimen110
+\TX@delta=\dimen111
+\TX@cols=\count88
+\TX@ftn=\toks17
+)
+(X:\projects\AutomaticTuningOfSysParams\spie\manuscript\rhgong_atosp-full.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+
+cmr-font_in_spiecls
+10pt
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+ [1
+
+]
+File: pics/framework.eps Graphic file (type eps)
+
+<pics/framework.eps> [2] [3]
+File: pics/seg_p0t0.eps Graphic file (type eps)
+ <pics/seg_p0t0.eps>
+File: pics/seg_p1t0.eps Graphic file (type eps)
+ <pics/seg_p1t0.eps>
+File: pics/seg_p2t0.eps Graphic file (type eps)
+
+<pics/seg_p2t0.eps>
+File: pics/seg_p3t20.eps Graphic file (type eps)
+ <pics/seg_p3t20.eps>
+File: pics/seg_p4t0.eps Graphic file (type eps)
+ <pics/seg_p4t0.eps>
+File: pics/seg_p0t0_t50.eps Graphic file (type eps)
+
+<pics/seg_p0t0_t50.eps>
+File: pics/seg_p1t0_t50.eps Graphic file (type eps)
+ <pics/seg_p1t0_t50.eps>
+File: pics/seg_p2t0_t50.eps Graphic file (type eps)
+ <pics/seg_p2t0_t50.eps>
+File: pics/seg_p3t20_t50.eps Graphic file (type eps)
+
+<pics/seg_p3t20_t50.eps>
+File: pics/seg_p4t0_t50.eps Graphic file (type eps)
+ <pics/seg_p4t0_t50.eps>
+File: pics/registrations_for_training.eps Graphic file (type eps)
+
+<pics/registrations_for_training.eps>
+File: pics/registrations_for_validation.eps Graphic file (type eps)
+ <pics/registrations_for_validation.eps>
+[4] [5]
+File: pics/cf_plot_p0.eps Graphic file (type eps)
+ <pics/cf_plot_p0.eps>
+File: pics/cf_plot_p1.eps Graphic file (type eps)
+ <pics/cf_plot_p1.eps>
+File: pics/cf_plot_p2.eps Graphic file (type eps)
+ <pics/cf_plot_p2.eps>
+File: pics/cf_plot_p3.eps Graphic file (type eps)
+
+<pics/cf_plot_p3.eps>
+File: pics/results_training_2.eps Graphic file (type eps)
+ <pics/results_training_2.eps> [6]
+(X:\projects\AutomaticTuningOfSysParams\spie\manuscript\rhgong_atosp-full.bbl
+[7]) [8]
+(X:\projects\AutomaticTuningOfSysParams\spie\manuscript\rhgong_atosp-full.aux) 
+) 
+Here is how much of TeX's memory you used:
+ 1189 strings out of 494046
+ 14860 string characters out of 3146040
+ 67237 words of memory out of 3000000
+ 4477 multiletter control sequences out of 15000+200000
+ 10653 words of font info for 41 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 29i,8n,24p,1493b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on rhgong_atosp-full.dvi (8 pages, 34472 bytes).
